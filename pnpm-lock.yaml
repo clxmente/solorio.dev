@@ -14,8 +14,10 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.1.13
   react: 18.1.0
   react-dom: 18.1.0
+  react-icons: ^4.4.0
   tailwindcss: ^3.1.2
   typescript: 4.7.2
+  use-lanyard: ^1.2.0
 
 dependencies:
   '@headlessui/react': 1.7.0_ef5jwxihqo6n7gxfmzogljlgcm
@@ -24,6 +26,8 @@ dependencies:
   next: 12.3.0_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
+  react-icons: 4.4.0_react@18.1.0
+  use-lanyard: 1.2.0_react@18.1.0
 
 devDependencies:
   '@types/node': 17.0.35
@@ -789,6 +793,14 @@ packages:
       scheduler: 0.22.0
     dev: false
 
+  /react-icons/4.4.0_react@18.1.0:
+    resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.1.0
+    dev: false
+
   /react/18.1.0:
     resolution: {integrity: sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==}
     engines: {node: '>=0.10.0'}
@@ -867,6 +879,14 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /swr/1.3.0_react@18.1.0:
+    resolution: {integrity: sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.1.0
+    dev: false
+
   /tailwindcss/3.1.8_postcss@8.4.16:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
@@ -927,6 +947,16 @@ packages:
       escalade: 3.1.1
       picocolors: 1.0.0
     dev: true
+
+  /use-lanyard/1.2.0_react@18.1.0:
+    resolution: {integrity: sha512-cFGuRhQx1K7Mh3jAR+7GdNdQ/zRCp1FRg8b/ROPGXRKNptFdEXw1V1I3144WkDORXzkEQnJg6YSx1iq/7cLuCQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=17'
+    dependencies:
+      react: 18.1.0
+      swr: 1.3.0_react@18.1.0
+    dev: false
 
   /use-sync-external-store/1.2.0_react@18.1.0:
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}

@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Disclosure, Transition } from "@headlessui/react";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Song from "./song";
 
 const Nav = () => {
   return (
@@ -19,35 +20,43 @@ const Nav = () => {
         {/* Open indicates whether the disclosure is open or not */}
         {({ open }) => (
           <>
-            {/* Mobile Open/Close Btn */}
-            <Disclosure.Button
-              className="rounded-xl p-2 text-white hover:text-gray-300 sm:hidden"
-              onClick={() =>
-                void new Audio("/pop.mp3").play().catch(() => null)
-              }
-            >
-              {!open ? (
-                <Bars3Icon className="h-6 w-6" />
-              ) : (
-                <XMarkIcon className="h-6 w-6" />
-              )}
-            </Disclosure.Button>
-            {/* Mobile Open/Close Btn */}
+            <div className="flex items-center justify-between">
+              <div>
+                {/* Mobile Open/Close Btn */}
+                <Disclosure.Button
+                  className="rounded-xl p-2 text-white hover:text-gray-300 sm:hidden"
+                  onClick={() =>
+                    void new Audio("/pop.mp3").play().catch(() => null)
+                  }
+                >
+                  {!open ? (
+                    <Bars3Icon className="h-6 w-6" />
+                  ) : (
+                    <XMarkIcon className="h-6 w-6" />
+                  )}
+                </Disclosure.Button>
+                {/* END Mobile Open/Close Btn */}
 
-            {/* Desktop Links */}
-            <div className="hidden space-x-4 sm:flex">
-              <Link href="/">
-                <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
-                  Home
-                </a>
-              </Link>
-              <Link href="/contact">
-                <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
-                  Contact
-                </a>
-              </Link>
+                {/* Desktop Links */}
+                <div className="hidden space-x-4 sm:flex">
+                  <Link href="/">
+                    <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
+                      Home
+                    </a>
+                  </Link>
+                  <Link href="/contact">
+                    <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
+                      Contact
+                    </a>
+                  </Link>
+                </div>
+                {/* END Desktop Links */}
+              </div>
+
+              {/* SPOTIFY??? */}
+              <Song />
+              {/* END SPOTIFY??? */}
             </div>
-            {/* Desktop Links */}
 
             {/* Mobile Links */}
             <Transition
