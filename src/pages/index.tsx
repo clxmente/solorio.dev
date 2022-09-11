@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           I&apos;m a {age.toFixed(4)} year old software engineer and student
           enrolled{" "}
           <a
-            className="text-sky-500 hover:text-sky-300 hover:underline"
+            className="text-sky-400 hover:underline"
             target="_blank"
             rel="noreferrer noopener"
             href="https://www.fullerton.edu/"
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           Next.js, Typescript, and a variety of database solutions. I&apos;m
           currently building{" "}
           <a
-            className="text-sky-500 hover:text-sky-300 hover:underline"
+            className="text-sky-400 hover:underline"
             target="_blank"
             rel="noreferrer noopener"
             href="https://stardew.app/?utm_campaign=ClemSite&utm_source=Website&utm_medium=Link"

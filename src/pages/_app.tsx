@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 
+import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import Nav from "../components/navbar";
+import Nav from "../components/nav";
 import Head from "next/head";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   }, [router.pathname]);
 
   return (
-    <div className="mx-auto max-w-4xl space-y-8 py-10 px-5 sm:px-0">
+    <div className="mx-auto max-w-4xl space-y-8 py-10 px-5 lg:px-0">
       <Head>
         <title>Clemente Solorio</title>
         <meta
