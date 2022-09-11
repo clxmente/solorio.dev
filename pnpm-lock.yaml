@@ -1,18 +1,24 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@heroicons/react': ^2.0.10
   '@types/node': 17.0.35
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
   autoprefixer: ^10.4.7
+  framer-motion: ^7.3.2
   next: latest
   postcss: ^8.4.14
+  prettier: ^2.7.1
+  prettier-plugin-tailwindcss: ^0.1.13
   react: 18.1.0
   react-dom: 18.1.0
   tailwindcss: ^3.1.2
   typescript: 4.7.2
 
 dependencies:
+  '@heroicons/react': 2.0.10_react@18.1.0
+  framer-motion: 7.3.2_ef5jwxihqo6n7gxfmzogljlgcm
   next: 12.3.0_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -23,10 +29,80 @@ devDependencies:
   '@types/react-dom': 18.0.5
   autoprefixer: 10.4.8_postcss@8.4.16
   postcss: 8.4.16
+  prettier: 2.7.1
+  prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   tailwindcss: 3.1.8_postcss@8.4.16
   typescript: 4.7.2
 
 packages:
+
+  /@emotion/is-prop-valid/0.8.8:
+    resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
+    requiresBuild: true
+    dependencies:
+      '@emotion/memoize': 0.7.4
+    dev: false
+    optional: true
+
+  /@emotion/memoize/0.7.4:
+    resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    dev: false
+    optional: true
+
+  /@heroicons/react/2.0.10_react@18.1.0:
+    resolution: {integrity: sha512-Ufr+pgAElNiRCSklnHGOR10bXb02BLlosvbDK7sCRUMOcQ3R/HCXTfXs4BUkYZ4dKpx6l5dUD06VSW1dTpTEDw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.1.0
+    dev: false
+
+  /@motionone/animation/10.14.0:
+    resolution: {integrity: sha512-h+1sdyBP8vbxEBW5gPFDnj+m2DCqdlAuf2g6Iafb1lcMnqjsRXWlPw1AXgvUMXmreyhqmPbJqoNfIKdytampRQ==}
+    dependencies:
+      '@motionone/easing': 10.14.0
+      '@motionone/types': 10.14.0
+      '@motionone/utils': 10.14.0
+      tslib: 2.4.0
+    dev: false
+
+  /@motionone/dom/10.13.1:
+    resolution: {integrity: sha512-zjfX+AGMIt/fIqd/SL1Lj93S6AiJsEA3oc5M9VkUr+Gz+juRmYN1vfvZd6MvEkSqEjwPQgcjN7rGZHrDB9APfQ==}
+    dependencies:
+      '@motionone/animation': 10.14.0
+      '@motionone/generators': 10.14.0
+      '@motionone/types': 10.14.0
+      '@motionone/utils': 10.14.0
+      hey-listen: 1.0.8
+      tslib: 2.4.0
+    dev: false
+
+  /@motionone/easing/10.14.0:
+    resolution: {integrity: sha512-2vUBdH9uWTlRbuErhcsMmt1jvMTTqvGmn9fHq8FleFDXBlHFs5jZzHJT9iw+4kR1h6a4SZQuCf72b9ji92qNYA==}
+    dependencies:
+      '@motionone/utils': 10.14.0
+      tslib: 2.4.0
+    dev: false
+
+  /@motionone/generators/10.14.0:
+    resolution: {integrity: sha512-6kRHezoFfIjFN7pPpaxmkdZXD36tQNcyJe3nwVqwJ+ZfC0e3rFmszR8kp9DEVFs9QL/akWjuGPSLBI1tvz+Vjg==}
+    dependencies:
+      '@motionone/types': 10.14.0
+      '@motionone/utils': 10.14.0
+      tslib: 2.4.0
+    dev: false
+
+  /@motionone/types/10.14.0:
+    resolution: {integrity: sha512-3bNWyYBHtVd27KncnJLhksMFQ5o2MSdk1cA/IZqsHtA9DnRM1SYgN01CTcJ8Iw8pCXF5Ocp34tyAjY7WRpOJJQ==}
+    dev: false
+
+  /@motionone/utils/10.14.0:
+    resolution: {integrity: sha512-sLWBLPzRqkxmOTRzSaD3LFQXCPHvDzyHJ1a3VP9PRzBxyVd2pv51/gMOsdAcxQ9n+MIeGJnxzXBYplUHKj4jkw==}
+    dependencies:
+      '@motionone/types': 10.14.0
+      hey-listen: 1.0.8
+      tslib: 2.4.0
+    dev: false
 
   /@next/env/12.3.0:
     resolution: {integrity: sha512-PTJpjAFVbzBQ9xXpzMTroShvD5YDIIy46jQ7d4LrWpY+/5a8H90Tm8hE3Hvkc5RBRspVo7kvEOnqQms0A+2Q6w==}
@@ -368,6 +444,30 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
+  /framer-motion/7.3.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha512-BTG0BqJSwxoFBWpwaaxS/954DGZFsluF+dUv9Hfq53VNkwUt5g+wYTEM66oTUhiH/+6R/y0Rq+BmkUBcmzbyMQ==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    dependencies:
+      '@motionone/dom': 10.13.1
+      framesync: 6.1.2
+      hey-listen: 1.0.8
+      popmotion: 11.0.5
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      style-value-types: 5.1.2
+      tslib: 2.4.0
+    optionalDependencies:
+      '@emotion/is-prop-valid': 0.8.8
+    dev: false
+
+  /framesync/6.1.2:
+    resolution: {integrity: sha512-jBTqhX6KaQVDyus8muwZbBeGGP0XgujBRbQ7gM7BRdS3CadCZIHiawyzYLnafYcvZIh5j8WE7cxZKFn7dXhu9g==}
+    dependencies:
+      tslib: 2.4.0
+    dev: false
+
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -400,6 +500,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /hey-listen/1.0.8:
+    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
+    dev: false
 
   /is-binary-path/2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
@@ -550,6 +654,15 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /popmotion/11.0.5:
+    resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
+    dependencies:
+      framesync: 6.1.2
+      hey-listen: 1.0.8
+      style-value-types: 5.1.2
+      tslib: 2.4.0
+    dev: false
+
   /postcss-import/14.1.0_postcss@8.4.16:
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
     engines: {node: '>=10.0.0'}
@@ -629,6 +742,21 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
+    resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      prettier: '>=2.2.0'
+    dependencies:
+      prettier: 2.7.1
+    dev: true
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
@@ -697,6 +825,13 @@ packages:
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
+
+  /style-value-types/5.1.2:
+    resolution: {integrity: sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==}
+    dependencies:
+      hey-listen: 1.0.8
+      tslib: 2.4.0
+    dev: false
 
   /styled-jsx/5.0.6_react@18.1.0:
     resolution: {integrity: sha512-xOeROtkK5MGMDimBQ3J6iPId8q0t/BDoG5XN6oKkZClVz9ISF/hihN8OCn2LggMU6N32aXnrXBdn3auSqNS9fA==}
