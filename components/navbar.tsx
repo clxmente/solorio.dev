@@ -1,9 +1,52 @@
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Disclosure } from "@headlessui/react";
+
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+
 const Nav = () => {
   return (
-    <nav className="w-full bg-white/10 backdrop-blur-sm px-4 py-3 flex space-x-4 rounded-md">
-      <div className="text-white">item1</div>
-      <div className="text-white">item1</div>
-    </nav>
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      className="sticky top-4 z-50"
+    >
+      <Disclosure
+        as="nav"
+        className="flex w-full items-center space-x-4 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-lg"
+      >
+        {/* Open indicates whether the disclosure is open or not */}
+        {({ open }) => (
+          <>
+            {/* Mobile Open/Close Btn */}
+            <Disclosure.Button className="rounded-xl p-2 text-white hover:text-gray-300 sm:hidden">
+              {!open ? (
+                <Bars3Icon className="h-6 w-6" />
+              ) : (
+                <XMarkIcon className="h-6 w-6" />
+              )}
+            </Disclosure.Button>
+            {/* Mobile Open/Close Btn */}
+
+            {/* Desktop Links */}
+            <div className="hidden space-x-4 sm:flex">
+              <Link href="/">
+                <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
+                  Home
+                </a>
+              </Link>
+              <Link href="/contact">
+                <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
+                  Contact
+                </a>
+              </Link>
+            </div>
+            {/* Desktop Links */}
+          </>
+        )}
+      </Disclosure>
+    </motion.div>
   );
 };
 
