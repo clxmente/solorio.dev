@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 
+import { AnimatePresence } from "framer-motion";
+
 import Nav from "../components/navbar";
 import Head from "next/head";
 
@@ -19,8 +21,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="https://github.com/clxmente.png" />
       </Head>
+
       <Nav />
-      <Component {...pageProps} />
+
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} />
+      </AnimatePresence>
     </div>
   );
 }
