@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Nav from "../components/navbar";
 import Head from "next/head";
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Clemente Solorio</title>
         <meta
           name="description"
-          content="Hello, I'm Clemente Solorio. I'm a full-stack web developer and a student at California State University, Fullerton."
+          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
         <meta
           name="keywords"
@@ -24,8 +24,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Nav />
 
-      <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} />
+      <AnimatePresence>
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          exit={{ y: 10, opacity: 0 }}
+        >
+          <Component {...pageProps} />
+        </motion.div>
       </AnimatePresence>
     </div>
   );

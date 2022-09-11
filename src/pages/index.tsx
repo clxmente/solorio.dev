@@ -1,10 +1,17 @@
 import type { NextPage } from "next";
 
+import { motion } from "framer-motion";
+
 import { age } from "../utils/age";
 
 const Home: NextPage = () => {
   return (
-    <main className="space-y-12 px-5 text-white">
+    <motion.main
+      initial={{ y: 10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className="space-y-12 px-5 text-white"
+    >
       {/* Header and small intro */}
       <div className="space-y-4">
         <h1 className="sm:text-4xl, text-3xl font-bold md:text-5xl">
@@ -55,7 +62,7 @@ const Home: NextPage = () => {
         </p>
       </div>
       {/* END About Me */}
-    </main>
+    </motion.main>
   );
 };
 
