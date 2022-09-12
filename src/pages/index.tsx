@@ -7,6 +7,7 @@ import { age } from "../utils/age";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 import Project from "../components/project";
+import Technologies from "../components/technologies";
 
 const Home: NextPage = () => {
   return (
@@ -107,7 +108,7 @@ const Home: NextPage = () => {
             proj_url="https://tender.vercel.app/"
           />
           <Project
-            title="🌐 Personal Website"
+            title="🌐 solorio.dev"
             description="My personal portfolio website built with Next.js and Tailwind CSS."
             gh_url="https://github.com/clxmente/solorio.dev"
           />
@@ -123,6 +124,13 @@ const Home: NextPage = () => {
         </div>
       </div>
       {/* END Projects */}
+
+      {/* Technologies */}
+      <div className="space-y-4">
+        <h2>Technologies 💻</h2>
+        <Technologies />
+      </div>
+      {/* END Technologies */}
     </motion.main>
   );
 };
