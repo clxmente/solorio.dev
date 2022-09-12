@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import { motion } from "framer-motion";
 
 import { age } from "../utils/age";
+
 import Project from "../components/project";
 
 const Home: NextPage = () => {
@@ -66,14 +67,16 @@ const Home: NextPage = () => {
       {/* Projects */}
       <div className="space-y-4">
         <h2>Projects 🕹️</h2>
-        <Project
-          title="🌟 stardew.app"
-          description="A web application for Stardew valley players that allows them to track their progress towards 100% completion in a simple and easy to use interface."
-        />
-        <Project
-          title="🎮 NBA Players Game"
-          description="Fun web application to see how many NBA Players a user can guess within a time limit. Includes a leaderboard to see which users can guess the most players."
-        />
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Project
+            title="🌟 stardew.app"
+            description="A web application for Stardew valley players that allows them to track their progress towards 100% completion in a simple and easy to use interface."
+          />
+          <Project
+            title="🎮 NBA Players Game"
+            description="Fun web application to see how many NBA Players a user can guess within a time limit. Includes a leaderboard to see which users can guess the most players."
+          />
+        </div>
       </div>
       {/* END Projects */}
     </motion.main>
