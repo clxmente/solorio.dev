@@ -19,7 +19,7 @@ const Song = () => {
       target="_blank"
       rel="noreferrer"
       href={`https://open.spotify.com/track/${data.spotify.track_id}`}
-      className="group flex items-center space-x-2 font-medium text-gray-400 hover:text-white/80"
+      className="group flex items-center space-x-2 font-medium text-gray-400 hover:text-green-500/80"
     >
       <span className="truncate">
         <span className="underline">{data.spotify.song}</span> by{" "}

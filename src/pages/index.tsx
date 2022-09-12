@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import { age } from "../utils/age";
 
+import { SiGithub, SiLinkedin } from "react-icons/si";
+
 import Project from "../components/project";
 
 const Home: NextPage = () => {
@@ -16,6 +18,24 @@ const Home: NextPage = () => {
     >
       {/* Header and small intro */}
       <div className="space-y-4">
+        <div className="flex space-x-5">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="text-white hover:text-sky-400"
+            href="https://github.com/clxmente"
+          >
+            <SiGithub className="h-7 w-7" />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="text-white hover:text-sky-400"
+            href="https://linkedin.com/in/clementesolorio"
+          >
+            <SiLinkedin className="h-7 w-7" />
+          </a>
+        </div>
         <h1 className="sm:text-4xl, text-3xl font-bold md:text-5xl">
           Hello, I&apos;m Clemente
         </h1>
@@ -24,7 +44,7 @@ const Home: NextPage = () => {
           <a
             className="text-sky-400 hover:underline"
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noreferrer"
             href="https://www.fullerton.edu/"
           >
             @CSUF
@@ -47,7 +67,7 @@ const Home: NextPage = () => {
           <a
             className="text-sky-400 hover:underline"
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noreferrer"
             href="https://stardew.app/?utm_campaign=ClemSite&utm_source=Website&utm_medium=Link"
           >
             stardew.app
@@ -67,14 +87,38 @@ const Home: NextPage = () => {
       {/* Projects */}
       <div className="space-y-4">
         <h2>Projects 🕹️</h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
           <Project
             title="🌟 stardew.app"
             description="A web application for Stardew valley players that allows them to track their progress towards 100% completion in a simple and easy to use interface."
+            gh_url="https://github.com/stardewapp/stardew.app"
+            proj_url="https://stardew.app/?utm_campaign=ClemSite&utm_source=Website&utm_medium=Link"
           />
           <Project
             title="🎮 NBA Players Game"
-            description="Fun web application to see how many NBA Players a user can guess within a time limit. Includes a leaderboard to see which users can guess the most players."
+            description="A fun web game where you can try and guess as many NBA players as you can within a time limit. You can also compare your score with other players through a leaderboard, and share your game with your friends through a link."
+            gh_url="https://github.com/clxmente/NBA-Players-Game"
+            proj_url="https://nba-game.solorio.dev/"
+          />
+          <Project
+            title="🥩 Tender"
+            description="A web application for users to find new foods and restaurants to try. Personalied recipe suggestions based on dietary preferences and restaurants based on location."
+            gh_url="https://github.com/clxmente/tender"
+            proj_url="https://tender.vercel.app/"
+          />
+          <Project
+            title="🌐 Personal Website"
+            description="My personal portfolio website built with Next.js and Tailwind CSS."
+            gh_url="https://github.com/clxmente/solorio.dev"
+          />
+          <Project
+            title="🔒 Python Password Manager"
+            description="A CLI based password manager written in Python. Uses AES encryption to store passwords protected by a SHA256 hashed master password."
+            gh_url="https://github.com/clxmente/Python-Password-Manager"
+          />
+          <Project
+            title="📂 University Database"
+            description="Designed and implemented a database simulating a university in MySQL. Includes a frontend interface for users to interact with the database, written in HTML/CSS with the backend written in PHP."
           />
         </div>
       </div>
