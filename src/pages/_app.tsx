@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         <title>Clemente Solorio</title>
         <meta
           name="description"
-          content="Hllo 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
+          content="Hello 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
         <meta
           name="keywords"
