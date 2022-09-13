@@ -41,10 +41,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           property="og:description"
           content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
-        <meta
-          property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-        />
+        <meta property="og:image" content="/banner.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -54,10 +51,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           property="twitter:description"
           content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
-        <meta
-          property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-        />
+        <meta property="twitter:image" content="/banner.png" />
         <link rel="icon" href="https://github.com/clxmente.png" />
       </Head>
 
