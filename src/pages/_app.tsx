@@ -26,13 +26,37 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           name="keywords"
           content="Clemente Solorio, Clemente, Solorio, clxmente, github, developer, csuf, clem"
         />
+        {/* <!-- Primary Meta Tags --> */}
+        <meta name="title" content="Clemente Solorio" />
+        <meta
+          name="description"
+          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Clemente Solorio" />
+        <meta
+          property="og:description"
+          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
+        />
         <meta
           property="og:image"
-          content="https://user-images.githubusercontent.com/37494038/189980206-e9a226da-0a0d-4300-9317-4a04b0d03991.png"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Clemente Solorio" />
+        <meta
+          property="twitter:description"
+          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
         <meta
           property="twitter:image"
-          content="https://user-images.githubusercontent.com/37494038/189980206-e9a226da-0a0d-4300-9317-4a04b0d03991.png"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
         />
         <link rel="icon" href="https://github.com/clxmente.png" />
       </Head>
