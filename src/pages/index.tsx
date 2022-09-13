@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           Hello, I&apos;m Clemente
         </h1>
         <p className="font-semibold opacity-70">
-          I&apos;m a {age.toFixed(4)} year old student enrolled{" "}
+          I&apos;m a {Math.floor(age)} year old student enrolled{" "}
           <a
             className="text-sky-400 hover:underline"
             target="_blank"
