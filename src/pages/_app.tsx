@@ -26,6 +26,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           name="keywords"
           content="Clemente Solorio, Clemente, Solorio, clxmente, github, developer, csuf, clem"
         />
+        <meta
+          name="og:image"
+          content="https://user-images.githubusercontent.com/37494038/189980206-e9a226da-0a0d-4300-9317-4a04b0d03991.png"
+        />
         <link rel="icon" href="https://github.com/clxmente.png" />
       </Head>
 
