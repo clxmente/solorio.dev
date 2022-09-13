@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/37494038/189980206-e9a226da-0a0d-4300-9317-4a04b0d03991.png)
+
+
 # My Personal Website
 
 This is the source code for my personal website, which is hosted on Vercel. It's built with Next.js, Typescript, and Tailwind CSS.
