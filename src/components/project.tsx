@@ -66,7 +66,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
                     target="_blank"
                     rel="noreferrer"
                     href={gh_url}
-                    className="flex items-center space-x-2 rounded-full bg-gray-700 p-2 pr-4 transition-transform hover:scale-95"
+                    className="flex items-center space-x-2 rounded-full bg-gray-700 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
                   >
                     <SiGithub className="h-5 w-5" />
                     <p>Source Code</p>
@@ -77,7 +77,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
                     target="_blank"
                     rel="noreferrer"
                     href={proj_url}
-                    className="flex items-center space-x-2 rounded-full bg-gray-700 p-2 pr-4 transition-transform hover:scale-95"
+                    className="flex items-center space-x-2 rounded-full bg-gray-700 p-2 pr-2 transition-transform hover:scale-95 sm:pr-4"
                   >
                     <GlobeAltIcon className="h-5 w-5" />
                     <p>View Project</p>
