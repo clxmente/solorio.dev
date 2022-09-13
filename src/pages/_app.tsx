@@ -26,16 +26,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           name="keywords"
           content="Clemente Solorio, Clemente, Solorio, clxmente, github, developer, csuf, clem"
         />
-        {/* <!-- Primary Meta Tags --> */}
-        <meta name="title" content="Clemente Solorio" />
-        <meta
-          name="description"
-          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
-        />
-
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://solorio.dev" />
         <meta property="og:title" content="Clemente Solorio" />
         <meta
           property="og:description"
@@ -45,7 +38,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://solorio.dev" />
         <meta property="twitter:title" content="Clemente Solorio" />
         <meta
           property="twitter:description"
