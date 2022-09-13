@@ -29,11 +29,11 @@ const Item = ({ name, _icon }: { name: string; _icon: IconType }) => {
 
 const Technologies = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 sm:grid-cols-4">
+    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
       <Item name="Python" _icon={SiPython} />
-      <Item name="C++" _icon={SiCplusplus} />
-      <Item name="Javascript" _icon={SiJavascript} />
       <Item name="Typescript" _icon={SiTypescript} />
+      <Item name="Javascript" _icon={SiJavascript} />
+      <Item name="C++" _icon={SiCplusplus} />
       <Item name="php" _icon={SiPhp} />
       <Item name="HTML" _icon={SiHtml5} />
       <Item name="CSS" _icon={SiCss3} />

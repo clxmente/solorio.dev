@@ -8,10 +8,14 @@
   "dependencies": {
     "@headlessui/react": "^1.7.0",
     "@heroicons/react": "^2.0.10",
+    "@sendgrid/mail": "^7.7.0",
+    "csstype": "^3.1.1",
+    "email-validator": "^2.0.4",
     "framer-motion": "^7.3.2",
     "next": "latest",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-hot-toast": "^2.3.0",
     "react-icons": "^4.4.0",
     "use-lanyard": "^1.2.0"
   },
