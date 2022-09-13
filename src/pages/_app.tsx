@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         <title>Clemente Solorio</title>
         <meta
           name="description"
-          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
+          content="Hllo 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
         <meta
           name="keywords"
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         <meta property="og:title" content="Clemente Solorio" />
         <meta
           property="og:description"
-          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
+          content="Hello 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
         <meta property="og:image" content="/banner.png" />
 
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         <meta property="twitter:title" content="Clemente Solorio" />
         <meta
           property="twitter:description"
-          content="Hello, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
+          content="Hello 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
         <meta property="twitter:image" content="/banner.png" />
         <link rel="icon" href="https://github.com/clxmente.png" />
