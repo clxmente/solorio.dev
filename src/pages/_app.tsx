@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           property="og:description"
           content="Hello 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
-        <meta property="og:image" content="/banner.png" />
+        <meta property="og:image" content="/about.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           property="twitter:description"
           content="Hello 👋, I'm Clemente Solorio. I'm a fullstack web developer and a student at California State University, Fullerton."
         />
-        <meta property="twitter:image" content="/banner.png" />
+        <meta property="twitter:image" content="/about.png" />
         <link rel="icon" href="https://github.com/clxmente.png" />
       </Head>
 
