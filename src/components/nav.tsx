@@ -20,7 +20,7 @@ const Nav = () => {
         {/* Open indicates whether the disclosure is open or not */}
         {({ open }) => (
           <>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between space-x-8">
               <div>
                 {/* Mobile Open/Close Btn */}
                 <Disclosure.Button
