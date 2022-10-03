@@ -3,7 +3,6 @@ import type { NextPage } from "next";
 import toast, { Toaster } from "react-hot-toast";
 import { FormEvent } from "react";
 import { motion } from "framer-motion";
-import * as EmailValidator from "email-validator";
 
 import { SiDiscord, SiTwitter } from "react-icons/si";
 import { EnvelopeIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid";
