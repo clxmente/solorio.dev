@@ -23,8 +23,6 @@ export default async function handler(
     });
   }
 
-  console.log("api key", process.env.SENDGRID_API_KEY);
-
   const { email, message } = JSON.parse(req.body);
   if (!email || !message) {
     return res.status(400).json({
