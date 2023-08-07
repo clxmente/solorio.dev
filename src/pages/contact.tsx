@@ -65,7 +65,7 @@ const Contact: NextPage = () => {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <div className="col-span-2 flex flex-col space-y-3 md:col-span-1">
               <Social
-                text="clem#0001"
+                text="clxmente"
                 link="https://discord.com/users/393069508027351051"
                 hover="group-hover:text-[#7289d9]"
                 _icon={SiDiscord}
