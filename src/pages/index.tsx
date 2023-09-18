@@ -77,11 +77,6 @@ const Home: NextPage = () => {
           track their progress towards 100% completion in a simple and easy to
           use interface.
         </p>
-        <p className="font-semibold opacity-70">
-          Other than programming, I&apos;m a huge fan of sports, especially
-          basketball. I&apos;ve played all kinds of sports recreationally with
-          friends and in general, I love being outdoors and active.
-        </p>
       </div>
       {/* END About Me */}
 

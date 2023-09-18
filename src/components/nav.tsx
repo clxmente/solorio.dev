@@ -39,15 +39,17 @@ const Nav = () => {
 
                 {/* Desktop Links */}
                 <div className="hidden space-x-4 sm:flex">
-                  <Link href="/">
-                    <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
-                      Home
-                    </a>
+                  <Link
+                    href="/"
+                    className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30"
+                  >
+                    Home
                   </Link>
-                  <Link href="/contact">
-                    <a className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30">
-                      Contact
-                    </a>
+                  <Link
+                    href="/contact"
+                    className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-700/30"
+                  >
+                    Contact
                   </Link>
                 </div>
                 {/* END Desktop Links */}
@@ -73,7 +75,7 @@ const Nav = () => {
                 static
               >
                 <div className="mt-2 flex flex-col space-y-1">
-                  <Link href="/" passHref>
+                  <Link href="/" passHref legacyBehavior>
                     <Disclosure.Button
                       as="a"
                       className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-900/50"
@@ -81,7 +83,7 @@ const Nav = () => {
                       Home
                     </Disclosure.Button>
                   </Link>
-                  <Link href="/contact" passHref>
+                  <Link href="/contact" passHref legacyBehavior>
                     <Disclosure.Button
                       as="a"
                       className="rounded-md p-2 font-semibold text-gray-300 hover:bg-gray-900/50"
