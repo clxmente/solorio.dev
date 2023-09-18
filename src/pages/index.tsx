@@ -90,9 +90,15 @@ const Home: NextPage = () => {
         <h2>Projects 🕹️</h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
           <Project
+            title="🤖 tuffysearch"
+            description="CSUF course discovery tool using NLP via OpenAI. Search CSUF's catalog of over 3500 couses using natural language."
+            gh_url="https://github.com/clxmente/tuffysearch"
+            proj_url="https://tuffysearch.com/?utm_campaign=portfolio&utm_source=solorio.dev"
+          />
+          <Project
             title="🌟 stardew.app"
             description="A web application for Stardew valley players that allows them to track their progress towards 100% completion in a simple and easy to use interface."
-            gh_url="https://github.com/stardewapp/stardew.app"
+            gh_url="https://github.com/communitycenter/stardew.app"
             proj_url="https://stardew.app/?utm_campaign=ClemSite&utm_source=Website&utm_medium=Link"
           />
           <Project
