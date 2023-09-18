@@ -60,7 +60,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
               <p className="flex-1 select-none text-white/80">{description}</p>
 
               {/* links to proj and gh */}
-              <div className="flex justify-between">
+              <div className="flex flex-col gap-3 md:flex-row md:justify-between">
                 {gh_url && (
                   <a
                     target="_blank"
