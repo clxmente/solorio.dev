@@ -86,7 +86,7 @@ const Contact: NextPage = () => {
 
             <form
               onSubmit={(e: FormEvent<HTMLFormElement>) => handleSubmit(e)}
-              className="col-span-2 space-y-3 rounded-md border border-white/20 bg-[#1b2535] p-5 backdrop-blur-sm"
+              className="col-span-2 space-y-3 rounded-md border border-white/10 bg-[#1b2535] p-5 backdrop-blur-sm"
             >
               {/* Email */}
               <div className="space-y-1">

@@ -20,7 +20,7 @@ import { GrMysql } from "react-icons/gr";
 
 const Item = ({ name, _icon }: { name: string; _icon: IconType }) => {
   return (
-    <div className="flex items-center space-x-2 rounded-md border border-white/20 bg-[#1b2535] p-3">
+    <div className="flex items-center space-x-2 rounded-md border border-white/10 bg-[#1b2535] p-3">
       <_icon className="h-6 w-6 text-white/80" />
       <p className="text-white/80">{name}</p>
     </div>

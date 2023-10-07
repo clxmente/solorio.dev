@@ -19,7 +19,7 @@ const Social = ({ text, link, hover, _icon }: Props) => {
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="group flex items-center space-x-2 rounded-md border border-white/20 bg-[#1b2535] p-4 transition-transform hover:scale-95"
+          className="group flex items-center space-x-2 rounded-md border border-white/10 bg-[#1b2535] p-4 transition-transform hover:scale-95"
         >
           <_icon className={"h-6 w-6 text-white/80 " + hover} />
           <p className="font-medium text-gray-400">{text}</p>
@@ -45,7 +45,7 @@ const Social = ({ text, link, hover, _icon }: Props) => {
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="group flex items-center space-x-2 rounded-md border border-white/20 bg-[#1b2535] p-4 transition-transform hover:scale-95"
+        className="group flex items-center space-x-2 rounded-md border border-white/10 bg-[#1b2535] p-4 transition-transform hover:scale-95"
       >
         <div className="relative">
           <_icon className={"h-6 w-6 text-white/80 " + hover} />
@@ -66,7 +66,7 @@ const Social = ({ text, link, hover, _icon }: Props) => {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="group flex items-center space-x-2 rounded-md border border-white/20 bg-[#1b2535] p-4 transition-transform hover:scale-95"
+      className="group flex items-center space-x-2 rounded-md border border-white/10 bg-[#1b2535] p-4 transition-transform hover:scale-95"
     >
       <_icon className={"h-6 w-6 text-white/80 " + hover} />
       <p className="font-medium text-gray-400">{text}</p>
