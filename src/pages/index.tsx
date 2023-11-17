@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           Hello, I&apos;m Clemente
         </h1>
         <p className="font-semibold opacity-70">
-          I&apos;m a {Math.floor(age)} year old student enrolled{" "}
+          {Math.floor(age)}. Recent Computer Science graduate{" "}
           <a
             className="text-sky-400 hover:underline"
             target="_blank"
@@ -50,9 +50,8 @@ const Home: NextPage = () => {
           >
             @CSUF
           </a>
-          . I am currently in my 4th year of university, pursuing my Bachelors
-          degree in Computer Science, with an expected graduation date of May
-          2023.
+          . Proficient in Python, JavaScript/TypeScript, React, Next.js.
+          Passionate about crafting beautiful and innovative web applications.
         </p>
       </div>
       {/* END Header and small intro */}
@@ -84,6 +83,12 @@ const Home: NextPage = () => {
       <div className="space-y-4">
         <h2>Projects 🕹️</h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          <Project
+            title="🎥 spotify-obs"
+            description="Display your Spotify songs as an OBS browser source using Lanyard. Fully customizable and easy to use."
+            gh_url="https://github.com/clxmente/spotify-obs"
+            proj_url="https://spotify-obs.com"
+          />
           <Project
             title="🤖 tuffysearch"
             description="CSUF course discovery tool using NLP via OpenAI. Search CSUF's catalog of over 3500 couses using natural language."
