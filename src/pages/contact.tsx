@@ -67,18 +67,21 @@ const Contact: NextPage = () => {
               <Social
                 text="clxmente"
                 link="https://discord.com/users/393069508027351051"
+                social="Discord"
                 hover="group-hover:text-[#7289d9]"
                 _icon={SiDiscord}
               />
               <Social
                 text="clxmente"
                 link="https://twitter.com/clxmente"
+                social="Twitter"
                 hover="group-hover:text-[#00ACEE]"
                 _icon={SiTwitter}
               />
               <Social
                 text="clem@solorio.dev"
                 link="mailto:clem@solorio.dev"
+                social="Email"
                 hover="group-hover:text-[#6C91C2]"
                 _icon={EnvelopeIcon}
               />

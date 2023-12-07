@@ -67,6 +67,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
                     rel="noreferrer"
                     href={gh_url}
                     className="flex items-center space-x-2 rounded-full bg-gray-700 py-2 px-3 transition-transform hover:scale-95 sm:pr-4"
+                    data-umami-event="Project Source Code Viewed"
                   >
                     <SiGithub className="h-5 w-5" />
                     <p>Source Code</p>
@@ -78,6 +79,7 @@ const Project = ({ title, description, gh_url, proj_url }: Props) => {
                     rel="noreferrer"
                     href={proj_url}
                     className="flex items-center space-x-2 rounded-full bg-gray-700 py-2 px-3 transition-transform hover:scale-95 sm:pr-4"
+                    data-umami-event="Project Viewed"
                   >
                     <GlobeAltIcon className="h-5 w-5" />
                     <p>View Project</p>
