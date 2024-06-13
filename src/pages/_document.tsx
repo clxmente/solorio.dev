@@ -7,7 +7,7 @@ export default function Document() {
         <script
           async
           src="https://umami.lebron.cloud/script.js"
-          data-website-id="26b81684-ba39-48d1-bba7-0eedb7d3142e"
+          data-website-id="23b338c3-38cf-479d-aacd-228af1f36af3"
         ></script>
       </Head>
       <body>
