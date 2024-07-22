@@ -60,7 +60,7 @@ const Home: NextPage = () => {
       <div className="space-y-4">
         <h2>About Me 🔍</h2>
         <p className="font-semibold opacity-70">
-          I&apos;m an aspiring software engineer, currently focusing on building
+          I&apos;m a full stack web developer, currently focusing on building
           modern web applications with React and React frameworks such as
           Next.js, Typescript, and a variety of database solutions. I&apos;m
           currently building{" "}
